@@ -9,7 +9,7 @@ def Hashing(keyvalue) -> int:
 	return keyvalue % len(HashTable)
 
 def insert(Hashtable, keyvalue, value) -> None:
-	Hashtable(keyvalue)=value
+	Hashtable(keyvalue).append(value)
 		
 
 
