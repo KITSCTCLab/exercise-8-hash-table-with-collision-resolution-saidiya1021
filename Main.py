@@ -2,14 +2,16 @@ import re
 
 def display_hash(hashtable) -> None:
 	for i in range (len(Hashtable)):
-		for j in range (len(Hashtable[i])):
-			print(keyvalue,"-->",value)
+		print(i, end=" ")
+		for j in hashtable[i]:
+			print("-->", j, end=" ")
+		print()
 
 def Hashing(keyvalue) -> int:
 	return keyvalue % len(HashTable)
 
 def insert(Hashtable, keyvalue, value) -> None:
-	Hashtable[i][j]=value
+	Hashtable[keyvalue % len(Hashtable)].append(value)
 		
 
 
